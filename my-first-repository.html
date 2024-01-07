@@ -4,8 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My First Repository | #Day 1</title>
+    <style>
+      body {
+        height: 100vh;
+      }
+    </style>
   </head>
   <body>
+    
     <h1>Hello.</h1>
+    <br><br>
+    <input type="text">
+    <button>Submit</button>
+
+    <script>
+      const bg = document.querySelector('body')
+      const input = document.querySelector('input')
+      const btn = document.querySelector('button')
+
+      btn.addEventListener('click', () => {
+        bg.style.background = input.value
+      })
+    </script>
+    
   </body>
 </html>
